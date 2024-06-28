@@ -1,4 +1,5 @@
 #include <Novice.h>
+#include "GemeManeger.h"
 
 const char kWindowTitle[] = "GC2B_02_イトウ_シュンヤ";
 
