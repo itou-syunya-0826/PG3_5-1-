@@ -3,9 +3,9 @@
 GemeManeger::GemeManeger()
 {
 	//各シーンの配列
-	/*sceneArr_[TITLE] = make_unique<TitleScene>();
+	sceneArr_[TITLE] = make_unique<TitleScene>();
 	sceneArr_[STAGE] = make_unique<StageScene>();
-	sceneArr_[CLEAR] = make_unique<ClaerScene>();*/
+	sceneArr_[CLEAR] = make_unique<ClearScene>();
 
 	//初期シーンの設定
 	currentSceneNo_ = TITLE;
@@ -36,7 +36,7 @@ int GemeManeger::Run(char* keys, char* preKeys)
 		}
 
 		//更新処理
-		sceneArr_[currentSceneNo_]->Update();// シーンごとの更新処理
+		sceneArr_[currentSceneNo_]->Update(keys,preKeys);// シーンごとの更新処理
 
 		//描画処理
 		sceneArr_[currentSceneNo_]->Draw();

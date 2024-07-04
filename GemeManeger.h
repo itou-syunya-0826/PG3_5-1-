@@ -3,9 +3,9 @@
 #include <Novice.h>
 #include <memory>// std::uniqueを使うために必要
 #include "IScene.h"// シーンの基底クラスに加えて
-//#include "TitleScene.h"// 各シーンを読み込む
-//#include "StageScene.h"
-//#include "ClearScene.h"
+#include "TitleScene.h"// 各シーンを読み込む
+#include "StageScene.h"
+#include "ClearScene.h"
 
 using namespace std;
 
